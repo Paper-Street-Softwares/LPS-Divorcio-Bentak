@@ -1,73 +1,73 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import SectionArea from '../sectionElements/SectionArea'
-import SectionWrapper from '../sectionElements/SectionWrapper'
-import ButtonReflexo from '../interactives/ButtonReflexo'
-import content from '../../content/content'
-import { whatsAppThemes } from '../../context/UseContextArchive'
-import { Phone } from 'lucide-react'
-import WhatsappForm from '../interactives/WhatsappForm'
-import FormAndAdress from '../interactives/Forms/FormAndAdress'
-import MotionDivDownToUp from '../animation/MotionDivDownToUp'
-import { Check } from 'lucide-react'
+import React from "react";
+import { motion } from "framer-motion";
+import SectionArea from "../sectionElements/SectionArea";
+import SectionWrapper from "../sectionElements/SectionWrapper";
+import ButtonReflexo from "../interactives/ButtonReflexo";
+import content from "../../content/content";
+import { whatsAppThemes } from "../../context/UseContextArchive";
+import { Phone } from "lucide-react";
+import WhatsappForm from "../interactives/WhatsappForm";
+import FormAndAdress from "../interactives/Forms/FormAndAdress";
+import MotionDivDownToUp from "../animation/MotionDivDownToUp";
+import { Check } from "lucide-react";
 
 function CtaNovoTemplate({ colorMode, container }) {
   // Classes dinâmicas conforme colorMode
-  let text, textOpacity, backgroundMode, miniTagCtaDark, textDestaque
+  let text, textOpacity, backgroundMode, miniTagCtaDark, textDestaque;
 
   switch (colorMode) {
-    case 'light':
-      text = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosTextosPreto'
-      textDestaque = 'text-primaryDark'
-      backgroundMode = 'bg-transparent'
-      miniTagCtaDark = 'text-primaryDark'
-      break
-    case 'dark':
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corTitulosBranca/60'
-      textDestaque = 'text-primaryLight'
-      backgroundMode = 'bg-transparent'
-      miniTagCtaDark = 'text-primaryLight'
-      break
-    case 'defaultDark':
-      text = 'text-corTitulosBranca'
-      textOpacity = 'text-corTitulosBranca/60'
-      textDestaque = 'text-primaryLight'
-      backgroundMode = 'bg-transparent'
-      miniTagCtaDark = 'text-primaryLight'
-      break
+    case "light":
+      text = "text-corTitulosPreto";
+      textOpacity = "text-corOutrosTextosPreto";
+      textDestaque = "text-primaryDark";
+      backgroundMode = "bg-transparent";
+      miniTagCtaDark = "text-primaryDark";
+      break;
+    case "dark":
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corTitulosBranca/60";
+      textDestaque = "text-primaryLight";
+      backgroundMode = "bg-transparent";
+      miniTagCtaDark = "text-primaryLight";
+      break;
+    case "defaultDark":
+      text = "text-corTitulosBranca";
+      textOpacity = "text-corTitulosBranca/60";
+      textDestaque = "text-primaryLight";
+      backgroundMode = "bg-transparent";
+      miniTagCtaDark = "text-primaryLight";
+      break;
 
-    case 'defaultLight':
-      text = 'text-corTitulosPreto'
-      textOpacity = 'text-corOutrosTextosPreto'
-      textDestaque = 'text-primaryDark'
-      backgroundMode = 'bg-transparent'
-      miniTagCtaDark = 'text-primaryDark'
+    case "defaultLight":
+      text = "text-corTitulosPreto";
+      textOpacity = "text-corOutrosTextosPreto";
+      textDestaque = "text-primaryDark";
+      backgroundMode = "bg-transparent";
+      miniTagCtaDark = "text-primaryDark";
   }
 
   const containerList = [
     {
       icon: <Check className={`${textDestaque}`} />,
-      text: ' Orientação clara sobre seus direitos no divórcio',
+      text: "Análise gratuita do seu caso",
     },
     {
       icon: <Check className={`${textDestaque}`} />,
-      text: ' Atendimento humanizado e sigiloso com advogada especializada',
+      text: "Atendimento direto com a Advogada, sem intermediários",
     },
     {
       icon: <Check className={`${textDestaque}`} />,
-      text: ' Divórcio online, sem audiências e sem desgaste emocional',
+      text: "Resposta rápida e acompanhamento pelo WhatsApp",
     },
     {
       icon: <Check className={`${textDestaque}`} />,
-      text: ' Acompanhamento rápido pelo WhatsApp, do início ao fim',
+      text: "Processo iniciado no mesmo dia da análise",
     },
     {
       icon: <Check className={`${textDestaque}`} />,
-      text: ' Segurança para encerrar esse ciclo e seguir em frente',
+      text: "Você mais perto de receber o que é seu, sem sair de casa",
     },
-  ]
+  ];
 
   return (
     <SectionArea className={`relative z-0 ${backgroundMode}`}>
@@ -132,7 +132,7 @@ function CtaNovoTemplate({ colorMode, container }) {
         </section>
       </SectionWrapper>
     </SectionArea>
-  )
+  );
 }
 
-export default CtaNovoTemplate
+export default CtaNovoTemplate;

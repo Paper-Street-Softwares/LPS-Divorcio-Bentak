@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://divorcio.fernandesevieiraadvocacia.com.br/sitemap.xml
+Sitemap: https://divorcio.bentakadvespecializada.com.br/sitemap.xml
