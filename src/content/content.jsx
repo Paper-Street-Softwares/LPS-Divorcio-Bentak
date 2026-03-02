@@ -168,7 +168,7 @@ const content = {
       alt: "Imagem ilustrativa da Seção Início",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
-      ctaButtonText: "Quero resolver meu divórcio agora",
+      ctaButtonText: "Quero falar com a Advogada agora",
       ctaButtonTextSecondary: "A_Definir",
       obsHero: {
         icon: <LucideIdCard />,
@@ -346,7 +346,7 @@ const content = {
           subtitle: "A_Definir",
         },
       },
-      ctaButtonText: "Recuperar minha paz",
+      ctaButtonText: "Falar com Advogada",
     },
     emergency: {
       minitag: "A_Definir",
@@ -555,7 +555,7 @@ const content = {
       // titleDireita: (
       //   <h1 className="my-3 text-title5 font-mainFont">WhatsApp</h1>
       // ),
-      ctaButtonText: "Quero iniciar meu divórcio online",
+      ctaButtonText: "Quero iniciar meu divórcio agora",
       ctaButtonAriaLabel:
         "Botão para chamada de ação para contato pelo whatsapp",
     },
